@@ -1,1 +1,22 @@
+<!doctype html>
+<HTML>
+    <HEAD>
+        <meta chartest="UTF-8">
+        <title>撮った写真の紹介ページ</title>
+    </HEAD>
 
+    <BODY>
+        <script type="text/javascript">
+            today=new Date();
+            document.write(today);
+            document.write("<h1>撮った写真を紹介します</h1>");
+
+            var image=new Image(128, 128);
+            image.src="myhome.png";
+            document.body.appendChild(image);
+
+            document.write("<p>この写真は最寄り駅の近くで撮影したものです。</p>");
+            document.write("<p>iPhone7で撮影しました。</p>");  
+        </script>
+    </BODY>
+</HTML>
