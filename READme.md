@@ -1,4 +1,4 @@
 # Parctice.github.io
 練習  
 ↓リンクはこちら  
-[Parctice](Index.html)  
+[Parctice](index.html)  
