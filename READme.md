@@ -1,4 +1,4 @@
 # Parctice.github.io
-練習  
+自作BGM紹介ページ  
 ↓リンクはこちら  
-[Parctice](index.html)  
+[BGM](index.html)  
