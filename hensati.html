@@ -5,27 +5,18 @@
     <title>偏差値計算ページ</title>
     <style>
         body{
-            background: #efcde3;
-            font-family: "游ゴシック","ヒラギノ角ゴ ProN",sans-serif;
-        }
-        div{
-            background: #ffffff;
-            width: 800px;
-            padding: 10px;
-            text-align: center;
-            border: 2px solid #cccccc;
-            margin: 30px auto;
-            font-family: "游ゴシック"
+            background: #ebe9e9;
+            font-size: 20px;
         }
     </style>
+    <div style="text-align: center">
+        <h1>偏差値計算ページ</h1>
+        このページでは、自分の点数、平均点、標準偏差を入力することで、偏差値を求めることができます。<br>
+        ※入力フォームで上下キーを押すと、数値が変化してしまうため、使用しないでください。<br>
+    </div>
 </head>
 
 <body>
-    <div>
-        <h1>偏差値計算ページ</h1>
-        <p>このページでは、自分の点数、平均点、標準偏差を入力することで、偏差値を求めることができます。</p>
-        <p>※入力フォームで上下キーを押すと、数値が変化してしまうため、使用しないでください。</p>
-    </div>
     <br>
     <form oninput="op1.value =50+(((Number(自分の点数.value) - Number(平均点.value))/Number(標準偏差.value))*10);">
         <strong>自分の点数</strong><br>
