@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>偏差値計算ページ</title>
+    <style>
+        body{
+            background: #efcde3;
+            font-family: "游ゴシック","ヒラギノ角ゴ ProN",sans-serif;
+        }
+        div{
+            background: #ffffff;
+            width: 800px;
+            padding: 10px;
+            text-align: center;
+            border: 2px solid #cccccc;
+            margin: 30px auto;
+            font-family: "游ゴシック"
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>偏差値計算ページ</h1>
+        <p>このページでは、自分の点数、平均点、標準偏差を入力することで、偏差値を求めることができます。</p>
+    </div>
+    <br>
+    <form oninput="op1.value =50+(((Number(自分の点数.value) - Number(平均点.value))/Number(標準偏差.value))*10);">
+        <strong>自分の点数</strong><br>
+        <input type="number" name="自分の点数"><br>
+        <br>
+
+        <strong>平均点</strong><br>
+        <input type="number" name="平均点" step="0.1"><br>
+        <br>
+
+        <strong>標準偏差</strong><br>
+        <input type="number" name="標準偏差" step="0.1"><br>
+        <br>
+        <strong>偏差値=</strong>
+     <output name="op1"><strong>0</strong></output>
+     </form>
+</body>
+</html>
