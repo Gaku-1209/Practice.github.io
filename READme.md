@@ -1,4 +1,4 @@
-# Parctice.github.io
+# Practice.github.io
 自作BGM紹介ページ  
 ↓リンクはこちら  
 [BGM](music.html)  
