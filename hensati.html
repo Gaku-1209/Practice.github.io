@@ -14,17 +14,17 @@
             font-size: 100%;
         }
     </style>
-    <div style="text-align: center">
+</head>
+
+<body style="text-align: center">
+    <div>
         <h1>偏差値計算ページ</h1>
         このページでは、自分の点数、平均点、標準偏差を入力することで、偏差値を求めることができます。<br>
         ※入力フォームで上下キーを押すと、数値が変化してしまうため、使用しないでください。<br>
     </div>
-</head>
-
-<body>
     <br>
     <!--偏差値=50+((自分の点数-平均点)/標準偏差)*10-->
-    <form oninput="hensati.value =50+(((Number(自分の点数.value) - Number(平均点.value))/Number(標準偏差.value))*10);">
+    <form oninput="hensati.value =50+(((Number(自分の点数.value) - Number(平均点.value))/Number(標準偏差.value))*10);" >
         <!--自分の点数の入力フォーム-->
         <strong>自分の点数</strong><br>
         <input type="number" name="自分の点数"><br>
