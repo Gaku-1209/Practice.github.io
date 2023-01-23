@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
     <meta charset="utf-8">
-    <title>偏差値計算ページ</title>
+    <title>標準偏差計算ページ</title>
     <style>
         /*bodyのデザイン*/
         body{
@@ -17,13 +17,13 @@
 </head>
 
 <body style="text-align: center">
-    <h1>偏差値計算ページ</h1>
-    このページでは、自分の点数、平均点、標準偏差を入力することで、偏差値を求めることができます。<br>
+    <h1>標準偏差計算ページ</h1>
+    このページでは、自分の点数、平均点、偏差値を入力することで、標準偏差を求めることができます。模試の成績等にご活用ください。<br>
     ※入力フォームで上下キーを押すと、数値が変化してしまうため、使用しないでください。<br>
     <br>
 
-    <!--偏差値=50+((自分の点数-平均点)/標準偏差)*10-->
-    <form oninput="hensati.value =50+(((Number(自分の点数.value) - Number(平均点.value))/Number(標準偏差.value))*10);" >
+    <!--標準偏差=10*(自分の点数-平均点)/偏差値-50-->
+    <form oninput="標準偏差.value =(10*(Number(自分の点数.value)-Number(平均点.value))/(Number(偏差値.value)-50));" >
         <!--自分の点数の入力フォーム-->
         <strong>自分の点数</strong><br>
         <input type="number" name="自分の点数"><br>
@@ -35,16 +35,16 @@
         <br>
 
         <!--標準偏差の入力フォーム-->
-        <strong>標準偏差</strong><br>
-        <input type="number" name="標準偏差" step="0.1"><br>
+        <strong>偏差値</strong><br>
+        <input type="number" name="偏差値" step="0.1"><br>
         <br>
 
         <!--偏差値を出力-->
-        <strong>偏差値=</strong>
-        <output name="hensati">0</output>
+        <strong>標準偏差=</strong>
+        <output name="標準偏差">0</output>
      </form>
      <br>
-     標準偏差計算ページもございます。<br>
-     リンク：<a href="https://gaku-1209.github.io/Practice.github.io/stdev.html">標準偏差計算ページ</a>
+     偏差値計算ページもございます。<br>
+     リンク：<a href="https://gaku-1209.github.io/Practice.github.io/hensati.html">偏差値計算ページ</a>
 </body>
 </html>
