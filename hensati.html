@@ -23,20 +23,20 @@
     <br>
 
     <!--偏差値=50+((自分の点数-平均点)/標準偏差)*10-->
-    <form oninput="hensati.value =50+(((Number(自分の点数.value) - Number(平均点.value))/Number(標準偏差.value))*10);" >
+    <form oninput="hensati.value =50+(((Number(score.value) - Number(mean.value))/Number(std.value))*10);" >
         <!--自分の点数の入力フォーム-->
         <strong>自分の点数</strong><br>
-        <input type="number" name="自分の点数"><br>
+        <input type="number" name="score"><br>
         <br>
 
         <!--平均点の入力フォーム-->
         <strong>平均点</strong><br>
-        <input type="number" name="平均点" step="0.1"><br>
+        <input type="number" name="mean" step="0.1"><br>
         <br>
 
         <!--標準偏差の入力フォーム-->
         <strong>標準偏差</strong><br>
-        <input type="number" name="標準偏差" step="0.1"><br>
+        <input type="number" name="std" step="0.1"><br>
         <br>
 
         <!--偏差値を出力-->
